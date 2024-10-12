@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: sans-serif;
+    /* padding: 10px 80px; */
+    color: white;
+    background: url(https://img.freepik.com/free-photo/various-vegetables-black-table-with-space-message_1220-616.jpg) no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(9px);
+    min-height: 100vh;
+
+    /* background:linear-gradient(to right, rgb(2, 26, 40),rgba(1, 35, 35, 0.993)) */
+}
+.content{
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    /* max-width: 1300px; */
+    justify-content: center;
+
+}
+img{
+    transition: .4s;
+    cursor: pointer;
+
+}
+img:hover{
+    transform: scale(1.1);
+
+}
+.btn_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+button{
+    font-size: 16px;
+    padding: 8px 10px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border: 2px solid cyan;
+    border-radius: 4px;
+    outline: none;
+    transition: .3s;
+    position: relative;
+}
+button:active{
+    transform: scale(.95);
+}
+button::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;top: 0;
+    width: 0px;
+    color: white;
+    background-color: rgb(239, 28, 81);
+    z-index: -4;
+    transition: .3s;
+}
+/* button:hover{
+    transform:rotate(3deg);
+    border: 2px solid rgb(238, 255, 0);
+} */
+button:hover::before{
+    width: 100%;
+}
+.input_con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    /* border: 2px solid yellowgreen; */
+}
+input{
+    padding: 10px;
+    border: 2px solid cyan;
+    background-color: transparent;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    /* margin-left: 2px; */
+    text-align: center;
+    transition: .4s;
+    /* border-radius: 2px; */
+
+}
+input:hover{
+    padding: 10px 100px;
+}
+input:focus{
+    outline: none ;
+}
