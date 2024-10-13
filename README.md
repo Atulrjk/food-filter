@@ -1,3 +1,3 @@
 # React + Vite
 
-live demo : https://atulrjk.github.io/foot-filter/
+live demo : https://atulrjk.github.io/food-filter/
